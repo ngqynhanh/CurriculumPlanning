@@ -1,0 +1,663 @@
+@prefix ns1: <https://github.com/ngqynhanh/CurriculumPlanning/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://github.com/ngqynhanh/CurriculumPlanning/course/BA003IU> a ns1:Course ;
+    ns1:corequisite "0" ;
+    ns1:courseDescription "Introduces marketing fundamentals, consumer behavior, product strategy, and market research." ;
+    ns1:courseDifficulty 6.79e-01 ;
+    ns1:credits 3 ;
+    ns1:description "Introduces marketing fundamentals, consumer behavior, product strategy, and market research." ;
+    ns1:elective 1 ;
+    ns1:hasPrerequisite "0" ;
+    ns1:name "Principles of Marketing" ;
+    ns1:previous "0" .
+
+<https://github.com/ngqynhanh/CurriculumPlanning/course/BA005IU> a ns1:Course ;
+    ns1:corequisite "0" ;
+    ns1:courseDescription "Covers the principles of financial accounting, financial statements, and analysis for decision-making." ;
+    ns1:courseDifficulty 4.51e-01 ;
+    ns1:credits 3 ;
+    ns1:description "Covers the principles of financial accounting, financial statements, and analysis for decision-making." ;
+    ns1:elective 1 ;
+    ns1:hasPrerequisite "0" ;
+    ns1:name "Financial Accounting" ;
+    ns1:previous "0" .
+
+<https://github.com/ngqynhanh/CurriculumPlanning/course/EE049IU> a ns1:Course ;
+    ns1:corequisite "0" ;
+    ns1:courseDescription "Covers circuit theory, electrical components, and measurement tools for beginners in EE." ;
+    ns1:courseDifficulty 6.65e-01 ;
+    ns1:credits 3 ;
+    ns1:description "Covers circuit theory, electrical components, and measurement tools for beginners in EE." ;
+    ns1:elective 1 ;
+    ns1:hasPrerequisite "0" ;
+    ns1:name "Introduction to Electrical Engineering" ;
+    ns1:previous "0" .
+
+<https://github.com/ngqynhanh/CurriculumPlanning/course/EE068IU> a ns1:Course ;
+    ns1:corequisite "0" ;
+    ns1:courseDescription "Introduces analog and digital communication, modulation techniques, and system performance analysis." ;
+    ns1:courseDifficulty 3.6e-01 ;
+    ns1:credits 3 ;
+    ns1:description "Introduces analog and digital communication, modulation techniques, and system performance analysis." ;
+    ns1:elective 1 ;
+    ns1:hasPrerequisite "0" ;
+    ns1:name "Principles of Communication Systems" ;
+    ns1:previous "0" .
+
+<https://github.com/ngqynhanh/CurriculumPlanning/course/EN007IU> a ns1:Course ;
+    ns1:corequisite "0" ;
+    ns1:courseDescription "A beginner-level course in academic English listening skills, focusing on understanding lectures, note-taking, and recognizing main ideas and details." ;
+    ns1:courseDifficulty 6.5e-01 ;
+    ns1:credits 2 ;
+    ns1:description "A beginner-level course in academic English listening skills, focusing on understanding lectures, note-taking, and recognizing main ideas and details." ;
+    ns1:elective 0 ;
+    ns1:hasPrerequisite "0" ;
+    ns1:name "Writing AE1" ;
+    ns1:previous "0" .
+
+<https://github.com/ngqynhanh/CurriculumPlanning/course/EN008IU> a ns1:Course ;
+    ns1:corequisite "0" ;
+    ns1:courseDescription "Fundamentals of mechanics including motion, forces, energy, momentum, and rotational dynamics, tailored for science and engineering students." ;
+    ns1:courseDifficulty 6.05e-01 ;
+    ns1:credits 2 ;
+    ns1:description "Fundamentals of mechanics including motion, forces, energy, momentum, and rotational dynamics, tailored for science and engineering students." ;
+    ns1:elective 0 ;
+    ns1:hasPrerequisite "0" ;
+    ns1:name "Listening AE1" ;
+    ns1:previous "0" .
+
+<https://github.com/ngqynhanh/CurriculumPlanning/course/EN011IU> a ns1:Course ;
+    ns1:corequisite "0" ;
+    ns1:courseDescription "Explores object-oriented concepts such as classes, inheritance, polymorphism, and encapsulation using Java or C++." ;
+    ns1:courseDifficulty 4.65e-01 ;
+    ns1:credits 2 ;
+    ns1:description "Explores object-oriented concepts such as classes, inheritance, polymorphism, and encapsulation using Java or C++." ;
+    ns1:elective 0 ;
+    ns1:hasPrerequisite "EN008IU AND EN007IU" ;
+    ns1:name "Writing AE2" ;
+    ns1:previous "0" .
+
+<https://github.com/ngqynhanh/CurriculumPlanning/course/EN012IU> a ns1:Course ;
+    ns1:corequisite "0" ;
+    ns1:courseDescription "A lab course accompanying Physics 3, allowing students to experimentally explore electromagnetism and optics through hands-on activities." ;
+    ns1:courseDifficulty 6.77e-01 ;
+    ns1:credits 2 ;
+    ns1:description "A lab course accompanying Physics 3, allowing students to experimentally explore electromagnetism and optics through hands-on activities." ;
+    ns1:elective 0 ;
+    ns1:hasPrerequisite "EN008IU AND EN007IU" ;
+    ns1:name "Speaking AE2" ;
+    ns1:previous "0" .
+
+<https://github.com/ngqynhanh/CurriculumPlanning/course/IT013IU> a ns1:Course ;
+    ns1:corequisite "0" ;
+    ns1:courseDescription "Covers vectors, matrices, determinants, linear transformations, eigenvalues, and their applications in computing." ;
+    ns1:courseDifficulty 2.69e-01 ;
+    ns1:credits 4 ;
+    ns1:description "Covers vectors, matrices, determinants, linear transformations, eigenvalues, and their applications in computing." ;
+    ns1:elective 0 ;
+    ns1:hasPrerequisite "0" ;
+    ns1:name "Algorithms & Data Structures" ;
+    ns1:previous "IT069IU" .
+
+<https://github.com/ngqynhanh/CurriculumPlanning/course/IT017IU> a ns1:Course ;
+    ns1:corequisite "0" ;
+    ns1:courseDescription "Covers processes, memory management, file systems, and concurrency in modern operating systems." ;
+    ns1:courseDifficulty 7.51e-01 ;
+    ns1:credits 4 ;
+    ns1:description "Covers processes, memory management, file systems, and concurrency in modern operating systems." ;
+    ns1:elective 0 ;
+    ns1:hasPrerequisite "IT089IU AND IT013IU" ;
+    ns1:name "Operating Systems" ;
+    ns1:previous "0" .
+
+<https://github.com/ngqynhanh/CurriculumPlanning/course/IT024IU> a ns1:Course ;
+    ns1:corequisite "0" ;
+    ns1:courseDescription "Covers algorithms and techniques for rendering, modeling, and animation using OpenGL or similar libraries." ;
+    ns1:courseDifficulty 7.07e-01 ;
+    ns1:credits 4 ;
+    ns1:description "Covers algorithms and techniques for rendering, modeling, and animation using OpenGL or similar libraries." ;
+    ns1:elective 1 ;
+    ns1:hasPrerequisite "0" ;
+    ns1:name "Computer Graphics" ;
+    ns1:previous "IT069IU" .
+
+<https://github.com/ngqynhanh/CurriculumPlanning/course/IT044IU> a ns1:Course ;
+    ns1:corequisite "0" ;
+    ns1:courseDescription "Covers the design and development of mobile applications on platforms like Android and iOS using appropriate SDKs and tools." ;
+    ns1:courseDifficulty 3.59e-01 ;
+    ns1:credits 4 ;
+    ns1:description "Covers the design and development of mobile applications on platforms like Android and iOS using appropriate SDKs and tools." ;
+    ns1:elective 1 ;
+    ns1:hasPrerequisite "0" ;
+    ns1:name "Human-Computer Interaction" ;
+    ns1:previous "0" .
+
+<https://github.com/ngqynhanh/CurriculumPlanning/course/IT056IU> a ns1:Course ;
+    ns1:corequisite "0" ;
+    ns1:courseDescription "Introduces blockchain technology, smart contracts, distributed ledgers, and their applications in modern systems." ;
+    ns1:courseDifficulty 6.53e-01 ;
+    ns1:credits 4 ;
+    ns1:description "Introduces blockchain technology, smart contracts, distributed ledgers, and their applications in modern systems." ;
+    ns1:elective 1 ;
+    ns1:hasPrerequisite "0" ;
+    ns1:name "IT Project Management" ;
+    ns1:previous "IT069IU" .
+
+<https://github.com/ngqynhanh/CurriculumPlanning/course/IT058IU> a ns1:Course ;
+    ns1:corequisite "0" ;
+    ns1:courseDescription "The final capstone project involving research or development in a specific computer science domain under supervision." ;
+    ns1:courseDifficulty 2.04e-01 ;
+    ns1:credits 10 ;
+    ns1:description "The final capstone project involving research or development in a specific computer science domain under supervision." ;
+    ns1:elective 0 ;
+    ns1:hasPrerequisite "IT083IU" ;
+    ns1:name "Thesis" ;
+    ns1:previous "0" .
+
+<https://github.com/ngqynhanh/CurriculumPlanning/course/IT064IU> a ns1:Course ;
+    ns1:corequisite "0" ;
+    ns1:courseDescription "This course develops basic academic writing skills, including paragraph structure, coherence, and grammar for clear written communication." ;
+    ns1:courseDifficulty 6.29e-01 ;
+    ns1:credits 3 ;
+    ns1:description "This course develops basic academic writing skills, including paragraph structure, coherence, and grammar for clear written communication." ;
+    ns1:elective 0 ;
+    ns1:hasPrerequisite "0" ;
+    ns1:name "Introduction to Computing" ;
+    ns1:previous "0" .
+
+<https://github.com/ngqynhanh/CurriculumPlanning/course/IT069IU> a ns1:Course ;
+    ns1:corequisite "0" ;
+    ns1:courseDescription "Advanced physics concepts involving electricity, magnetism, and optics, with theoretical and real-world engineering applications." ;
+    ns1:courseDifficulty 3.25e-01 ;
+    ns1:credits 4 ;
+    ns1:description "Advanced physics concepts involving electricity, magnetism, and optics, with theoretical and real-world engineering applications." ;
+    ns1:elective 0 ;
+    ns1:hasPrerequisite "IT116IU OR IT149IU" ;
+    ns1:name "Object-Oriented Programming" ;
+    ns1:previous "0" .
+
+<https://github.com/ngqynhanh/CurriculumPlanning/course/IT076IU> a ns1:Course ;
+    ns1:corequisite "0" ;
+    ns1:courseDescription "Focuses on software development methodologies, lifecycle models, requirements engineering, and team collaboration." ;
+    ns1:courseDifficulty 6.98e-01 ;
+    ns1:credits 4 ;
+    ns1:description "Focuses on software development methodologies, lifecycle models, requirements engineering, and team collaboration." ;
+    ns1:elective 0 ;
+    ns1:hasPrerequisite "IT069IU" ;
+    ns1:name "Software Engineering" ;
+    ns1:previous "0" .
+
+<https://github.com/ngqynhanh/CurriculumPlanning/course/IT079IU> a ns1:Course ;
+    ns1:corequisite "0" ;
+    ns1:courseDescription "Study of sorting, searching, trees, graphs, and algorithm analysis to solve computational problems efficiently." ;
+    ns1:courseDifficulty 3.56e-01 ;
+    ns1:credits 4 ;
+    ns1:description "Study of sorting, searching, trees, graphs, and algorithm analysis to solve computational problems efficiently." ;
+    ns1:elective 0 ;
+    ns1:hasPrerequisite "0" ;
+    ns1:name "Principles of Database Management" ;
+    ns1:previous "IT116IU" .
+
+<https://github.com/ngqynhanh/CurriculumPlanning/course/IT082IU> a ns1:Course ;
+    ns1:corequisite "0" ;
+    ns1:courseDescription "A supervised industrial placement to apply academic knowledge in a real-world work environment." ;
+    ns1:courseDifficulty 3.97e-01 ;
+    ns1:credits 3 ;
+    ns1:description "A supervised industrial placement to apply academic knowledge in a real-world work environment." ;
+    ns1:elective 0 ;
+    ns1:hasPrerequisite "0" ;
+    ns1:name "Internship" ;
+    ns1:previous "0" .
+
+<https://github.com/ngqynhanh/CurriculumPlanning/course/IT083IU> a ns1:Course ;
+    ns1:corequisite "0" ;
+    ns1:courseDescription "An individual research or development project in a selected area of the student's major." ;
+    ns1:courseDifficulty 6.45e-01 ;
+    ns1:credits 3 ;
+    ns1:description "An individual research or development project in a selected area of the student's major." ;
+    ns1:elective 0 ;
+    ns1:hasPrerequisite "0" ;
+    ns1:name "Special Study of the Field" ;
+    ns1:previous "0" .
+
+<https://github.com/ngqynhanh/CurriculumPlanning/course/IT089IU> a ns1:Course ;
+    ns1:corequisite "0" ;
+    ns1:courseDescription "Explores processor design, memory hierarchies, instruction sets, and performance optimization." ;
+    ns1:courseDifficulty 2.77e-01 ;
+    ns1:credits 4 ;
+    ns1:description "Explores processor design, memory hierarchies, instruction sets, and performance optimization." ;
+    ns1:elective 0 ;
+    ns1:hasPrerequisite "0" ;
+    ns1:name "Computer Architecture" ;
+    ns1:previous "0" .
+
+<https://github.com/ngqynhanh/CurriculumPlanning/course/IT090IU> a ns1:Course ;
+    ns1:corequisite "0" ;
+    ns1:courseDescription "Focuses on object-oriented software modeling with UML, design patterns, and system analysis." ;
+    ns1:courseDifficulty 5.37e-01 ;
+    ns1:credits 4 ;
+    ns1:description "Focuses on object-oriented software modeling with UML, design patterns, and system analysis." ;
+    ns1:elective 0 ;
+    ns1:hasPrerequisite "IT069IU" ;
+    ns1:name "Object-Oriented Analysis and Design" ;
+    ns1:previous "0" .
+
+<https://github.com/ngqynhanh/CurriculumPlanning/course/IT091IU> a ns1:Course ;
+    ns1:corequisite "0" ;
+    ns1:courseDescription "Provides foundational mathematical structures for computer science including logic, sets, functions, combinatorics, and graph theory." ;
+    ns1:courseDifficulty 2.32e-01 ;
+    ns1:credits 4 ;
+    ns1:description "Provides foundational mathematical structures for computer science including logic, sets, functions, combinatorics, and graph theory." ;
+    ns1:elective 0 ;
+    ns1:hasPrerequisite "0" ;
+    ns1:name "Computer Networks" ;
+    ns1:previous "IT116IU" .
+
+<https://github.com/ngqynhanh/CurriculumPlanning/course/IT092IU> a ns1:Course ;
+    ns1:corequisite "0" ;
+    ns1:courseDescription "Explores programming paradigms, syntax and semantics, and language implementation techniques." ;
+    ns1:courseDifficulty 7.12e-01 ;
+    ns1:credits 4 ;
+    ns1:description "Explores programming paradigms, syntax and semantics, and language implementation techniques." ;
+    ns1:elective 0 ;
+    ns1:hasPrerequisite "0" ;
+    ns1:name "Principles of Programming Languages" ;
+    ns1:previous "0" .
+
+<https://github.com/ngqynhanh/CurriculumPlanning/course/IT093IU> a ns1:Course ;
+    ns1:corequisite "0" ;
+    ns1:courseDescription "A physical education course promoting fitness, endurance, and basic physical skills through structured exercise routines." ;
+    ns1:courseDifficulty 5.4e-01 ;
+    ns1:credits 4 ;
+    ns1:description "A physical education course promoting fitness, endurance, and basic physical skills through structured exercise routines." ;
+    ns1:elective 0 ;
+    ns1:hasPrerequisite "IT079IU AND IT06IU" ;
+    ns1:name "Web Application Development" ;
+    ns1:previous "0" .
+
+<https://github.com/ngqynhanh/CurriculumPlanning/course/IT094IU> a ns1:Course ;
+    ns1:corequisite "0" ;
+    ns1:courseDescription "Teaches strategic use of information systems for business decision-making and enterprise resource planning." ;
+    ns1:courseDifficulty 4.69e-01 ;
+    ns1:credits 4 ;
+    ns1:description "Teaches strategic use of information systems for business decision-making and enterprise resource planning." ;
+    ns1:elective 1 ;
+    ns1:hasPrerequisite "0" ;
+    ns1:name "Information System Management" ;
+    ns1:previous "IT079IU" .
+
+<https://github.com/ngqynhanh/CurriculumPlanning/course/IT096IU> a ns1:Course ;
+    ns1:corequisite "0" ;
+    ns1:courseDescription "Teaches socket programming, network protocols, and distributed application development." ;
+    ns1:courseDifficulty 5.56e-01 ;
+    ns1:credits 4 ;
+    ns1:description "Teaches socket programming, network protocols, and distributed application development." ;
+    ns1:elective 1 ;
+    ns1:hasPrerequisite "IT091IU" ;
+    ns1:name "Net-Centric Programming" ;
+    ns1:previous "0" .
+
+<https://github.com/ngqynhanh/CurriculumPlanning/course/IT114IU> a ns1:Course ;
+    ns1:corequisite "0" ;
+    ns1:courseDescription "Focuses on system design, architectural patterns, component-based development, and scalability." ;
+    ns1:courseDifficulty 7.09e-01 ;
+    ns1:credits 4 ;
+    ns1:description "Focuses on system design, architectural patterns, component-based development, and scalability." ;
+    ns1:elective 1 ;
+    ns1:hasPrerequisite "0" ;
+    ns1:name "Software Architecture" ;
+    ns1:previous "IT069IU" .
+
+<https://github.com/ngqynhanh/CurriculumPlanning/course/IT116IU> a ns1:Course ;
+    ns1:corequisite "0" ;
+    ns1:courseDescription "This course covers fundamental calculus concepts such as limits, derivatives, and integrals, with applications in engineering and science." ;
+    ns1:courseDifficulty 7.24e-01 ;
+    ns1:credits 4 ;
+    ns1:description "This course covers fundamental calculus concepts such as limits, derivatives, and integrals, with applications in engineering and science." ;
+    ns1:elective 0 ;
+    ns1:hasPrerequisite "0" ;
+    ns1:name "C/C++ Programming" ;
+    ns1:previous "0" .
+
+<https://github.com/ngqynhanh/CurriculumPlanning/course/IT120IU> a ns1:Course ;
+    ns1:corequisite "0" ;
+    ns1:courseDescription "Focuses on business idea generation, startups, venture capital, and entrepreneurial mindset development." ;
+    ns1:courseDifficulty 4.93e-01 ;
+    ns1:credits 3 ;
+    ns1:description "Focuses on business idea generation, startups, venture capital, and entrepreneurial mindset development." ;
+    ns1:elective 0 ;
+    ns1:hasPrerequisite "0" ;
+    ns1:name "Entrepreneurship" ;
+    ns1:previous "0" .
+
+<https://github.com/ngqynhanh/CurriculumPlanning/course/IT130IU> a ns1:Course ;
+    ns1:corequisite "0" ;
+    ns1:courseDescription "Covers image transformation, filtering, enhancement, segmentation, and computer vision basics." ;
+    ns1:courseDifficulty 2.11e-01 ;
+    ns1:credits 4 ;
+    ns1:description "Covers image transformation, filtering, enhancement, segmentation, and computer vision basics." ;
+    ns1:elective 1 ;
+    ns1:hasPrerequisite "0" ;
+    ns1:name "Digital Image Processing" ;
+    ns1:previous "0" .
+
+<https://github.com/ngqynhanh/CurriculumPlanning/course/IT133IU> a ns1:Course ;
+    ns1:corequisite "0" ;
+    ns1:courseDescription "Introduces dialectical materialism, historical materialism, and their application in society and politics." ;
+    ns1:courseDifficulty 2.6e-01 ;
+    ns1:credits 4 ;
+    ns1:description "Introduces dialectical materialism, historical materialism, and their application in society and politics." ;
+    ns1:elective 1 ;
+    ns1:hasPrerequisite "IT090IU" ;
+    ns1:name "Mobile Application Development" ;
+    ns1:previous "0" .
+
+<https://github.com/ngqynhanh/CurriculumPlanning/course/IT134IU> a ns1:Course ;
+    ns1:corequisite "0" ;
+    ns1:courseDescription "Focuses on designing user-friendly interfaces, usability testing, and interaction models in software applications." ;
+    ns1:courseDifficulty 6.64e-01 ;
+    ns1:credits 4 ;
+    ns1:description "Focuses on designing user-friendly interfaces, usability testing, and interaction models in software applications." ;
+    ns1:elective 1 ;
+    ns1:hasPrerequisite "IT091IU" ;
+    ns1:name "Internet of Things" ;
+    ns1:previous "0" .
+
+<https://github.com/ngqynhanh/CurriculumPlanning/course/IT138IU> a ns1:Course ;
+    ns1:corequisite "0" ;
+    ns1:courseDescription "Combines data preprocessing, statistical analysis, machine learning, and visualization tools like Tableau or Python." ;
+    ns1:courseDifficulty 5.44e-01 ;
+    ns1:credits 4 ;
+    ns1:description "Combines data preprocessing, statistical analysis, machine learning, and visualization tools like Tableau or Python." ;
+    ns1:elective 1 ;
+    ns1:hasPrerequisite "0" ;
+    ns1:name "Data Science and Data Visualization" ;
+    ns1:previous "0" .
+
+<https://github.com/ngqynhanh/CurriculumPlanning/course/IT150IU> a ns1:Course ;
+    ns1:corequisite "0" ;
+    ns1:courseDescription "Covers cryptography, network security, firewalls, and secure coding practices." ;
+    ns1:courseDifficulty 7.35e-01 ;
+    ns1:credits 4 ;
+    ns1:description "Covers cryptography, network security, firewalls, and secure coding practices." ;
+    ns1:elective 1 ;
+    ns1:hasPrerequisite "0" ;
+    ns1:name "Blockchain" ;
+    ns1:previous "0" .
+
+<https://github.com/ngqynhanh/CurriculumPlanning/course/IT153IU> a ns1:Course ;
+    ns1:corequisite "0" ;
+    ns1:courseDescription "An intermediate academic writing course emphasizing essay structure, argumentation, citation, and critical thinking." ;
+    ns1:courseDifficulty 2.59e-01 ;
+    ns1:credits 3 ;
+    ns1:description "An intermediate academic writing course emphasizing essay structure, argumentation, citation, and critical thinking." ;
+    ns1:elective 0 ;
+    ns1:hasPrerequisite "(IT116IU OR IT149IU) AND (IT154IU OR MA023IU)" ;
+    ns1:name "Discrete Mathematics" ;
+    ns1:previous "0" .
+
+<https://github.com/ngqynhanh/CurriculumPlanning/course/IT154IU> a ns1:Course ;
+    ns1:corequisite "0" ;
+    ns1:courseDescription "Continues Calculus 1 with techniques of integration, sequences and series, and multivariable functions." ;
+    ns1:courseDifficulty 6.85e-01 ;
+    ns1:credits 3 ;
+    ns1:description "Continues Calculus 1 with techniques of integration, sequences and series, and multivariable functions." ;
+    ns1:elective 0 ;
+    ns1:hasPrerequisite "MA002IU" ;
+    ns1:name "Linear Algebra" ;
+    ns1:previous "0" .
+
+<https://github.com/ngqynhanh/CurriculumPlanning/course/IT156IU> a ns1:Course ;
+    ns1:corequisite "0" ;
+    ns1:courseDescription "Focuses on DevOps culture, CI/CD pipelines, version control, and infrastructure as code." ;
+    ns1:courseDifficulty 5.83e-01 ;
+    ns1:credits 4 ;
+    ns1:description "Focuses on DevOps culture, CI/CD pipelines, version control, and infrastructure as code." ;
+    ns1:elective 1 ;
+    ns1:hasPrerequisite "0" ;
+    ns1:name "Development and Operations" ;
+    ns1:previous "0" .
+
+<https://github.com/ngqynhanh/CurriculumPlanning/course/IT157IU> a ns1:Course ;
+    ns1:corequisite "0" ;
+    ns1:courseDescription "Explores project lifecycle, planning, risk management, and agile methodologies in software development projects." ;
+    ns1:courseDifficulty 5.21e-01 ;
+    ns1:credits 4 ;
+    ns1:description "Explores project lifecycle, planning, risk management, and agile methodologies in software development projects." ;
+    ns1:elective 1 ;
+    ns1:hasPrerequisite "0" ;
+    ns1:name "Deep Learning" ;
+    ns1:previous "0" .
+
+<https://github.com/ngqynhanh/CurriculumPlanning/course/IT159IU> a ns1:Course ;
+    ns1:corequisite "0" ;
+    ns1:courseDescription "Covers search algorithms, knowledge representation, reasoning, and machine learning techniques in AI systems." ;
+    ns1:courseDifficulty 2.69e-01 ;
+    ns1:credits 4 ;
+    ns1:description "Covers search algorithms, knowledge representation, reasoning, and machine learning techniques in AI systems." ;
+    ns1:elective 0 ;
+    ns1:hasPrerequisite "0" ;
+    ns1:name "Artificial Intelligence" ;
+    ns1:previous "IT069IU AND IT053IU" .
+
+<https://github.com/ngqynhanh/CurriculumPlanning/course/IT160IU> a ns1:Course ;
+    ns1:corequisite "0" ;
+    ns1:courseDescription "Covers data preprocessing, pattern discovery, clustering, classification, and association rule mining techniques." ;
+    ns1:courseDifficulty 6.13e-01 ;
+    ns1:credits 4 ;
+    ns1:description "Covers data preprocessing, pattern discovery, clustering, classification, and association rule mining techniques." ;
+    ns1:elective 1 ;
+    ns1:hasPrerequisite "0" ;
+    ns1:name "Data Mining" ;
+    ns1:previous "IT069IU" .
+
+<https://github.com/ngqynhanh/CurriculumPlanning/course/IT164IU> a ns1:Course ;
+    ns1:corequisite "0" ;
+    ns1:courseDescription "Introduces cloud architectures, virtualization, cloud services (IaaS, PaaS, SaaS), and deployment models." ;
+    ns1:courseDifficulty 5.15e-01 ;
+    ns1:credits 4 ;
+    ns1:description "Introduces cloud architectures, virtualization, cloud services (IaaS, PaaS, SaaS), and deployment models." ;
+    ns1:elective 1 ;
+    ns1:hasPrerequisite "0" ;
+    ns1:name "Cloud computing" ;
+    ns1:previous "0" .
+
+<https://github.com/ngqynhanh/CurriculumPlanning/course/IT165IU> a ns1:Course ;
+    ns1:corequisite "0" ;
+    ns1:courseDescription "Teaches game design principles, graphics, physics engines, and development using modern game frameworks." ;
+    ns1:courseDifficulty 6.82e-01 ;
+    ns1:credits 4 ;
+    ns1:description "Teaches game design principles, graphics, physics engines, and development using modern game frameworks." ;
+    ns1:elective 1 ;
+    ns1:hasPrerequisite "0" ;
+    ns1:name "Security Technology and Implementation" ;
+    ns1:previous "0" .
+
+<https://github.com/ngqynhanh/CurriculumPlanning/course/IT166IU> a ns1:Course ;
+    ns1:corequisite "0" ;
+    ns1:courseDescription "Covers full-stack web development including front-end frameworks, back-end APIs, and deployment practices." ;
+    ns1:courseDifficulty 7.51e-01 ;
+    ns1:credits 4 ;
+    ns1:description "Covers full-stack web development including front-end frameworks, back-end APIs, and deployment practices." ;
+    ns1:elective 1 ;
+    ns1:hasPrerequisite "0" ;
+    ns1:name "Software Quality Verification and Validation" ;
+    ns1:previous "0" .
+
+<https://github.com/ngqynhanh/CurriculumPlanning/course/IT167IU> a ns1:Course ;
+    ns1:corequisite "0" ;
+    ns1:courseDescription "Focuses on software testing techniques, validation strategies, defect management, and quality assurance." ;
+    ns1:courseDifficulty 2.29e-01 ;
+    ns1:credits 4 ;
+    ns1:description "Focuses on software testing techniques, validation strategies, defect management, and quality assurance." ;
+    ns1:elective 1 ;
+    ns1:hasPrerequisite "0" ;
+    ns1:name "Game Application Development" ;
+    ns1:previous "0" .
+
+<https://github.com/ngqynhanh/CurriculumPlanning/course/MA001IU> a ns1:Course ;
+    ns1:corequisite "0" ;
+    ns1:courseDescription "This course introduces the principles of deep learning, including neural networks, convolutional neural networks (CNNs), recurrent networks, and autoencoders, with practical applications in image and language processing." ;
+    ns1:courseDifficulty 7.13e-01 ;
+    ns1:credits 4 ;
+    ns1:description "This course introduces the principles of deep learning, including neural networks, convolutional neural networks (CNNs), recurrent networks, and autoencoders, with practical applications in image and language processing." ;
+    ns1:elective 0 ;
+    ns1:hasPrerequisite "0" ;
+    ns1:name "Calculus 1" ;
+    ns1:previous "0" .
+
+<https://github.com/ngqynhanh/CurriculumPlanning/course/MA003IU> a ns1:Course ;
+    ns1:corequisite "0" ;
+    ns1:courseDescription "This course covers IP protocols, routing algorithms, TCP/IP, network architecture, LAN/WAN, and security concepts." ;
+    ns1:courseDifficulty 7.39e-01 ;
+    ns1:credits 4 ;
+    ns1:description "This course covers IP protocols, routing algorithms, TCP/IP, network architecture, LAN/WAN, and security concepts." ;
+    ns1:elective 0 ;
+    ns1:hasPrerequisite "0" ;
+    ns1:name "Calculus 2" ;
+    ns1:previous "MA001IU" .
+
+<https://github.com/ngqynhanh/CurriculumPlanning/course/MA026IU> a ns1:Course ;
+    ns1:corequisite "0" ;
+    ns1:courseDescription "Introduces probability theory, statistical inference, and random processes with applications in engineering." ;
+    ns1:courseDifficulty 6.79e-01 ;
+    ns1:credits 3 ;
+    ns1:description "Introduces probability theory, statistical inference, and random processes with applications in engineering." ;
+    ns1:elective 0 ;
+    ns1:hasPrerequisite "MA002IU" ;
+    ns1:name "Probability, Statistic & Random Process" ;
+    ns1:previous "0" .
+
+<https://github.com/ngqynhanh/CurriculumPlanning/course/PE008IU> a ns1:Course ;
+    ns1:corequisite "0" ;
+    ns1:courseDescription "An introduction to IoT architecture, sensors, networking, data collection, and smart device integration." ;
+    ns1:courseDifficulty 2.2e-01 ;
+    ns1:credits 3 ;
+    ns1:description "An introduction to IoT architecture, sensors, networking, data collection, and smart device integration." ;
+    ns1:elective 1 ;
+    ns1:hasPrerequisite "0" ;
+    ns1:name "Critical Thinking" ;
+    ns1:previous "0" .
+
+<https://github.com/ngqynhanh/CurriculumPlanning/course/PE015IU> a ns1:Course ;
+    ns1:corequisite "0" ;
+    ns1:courseDescription "A theoretical course on Marxist-Leninist economics, focusing on class struggle, surplus value, and socialist economic planning." ;
+    ns1:courseDifficulty 7.37e-01 ;
+    ns1:credits 3 ;
+    ns1:description "A theoretical course on Marxist-Leninist economics, focusing on class struggle, surplus value, and socialist economic planning." ;
+    ns1:elective 0 ;
+    ns1:hasPrerequisite "0" ;
+    ns1:name "Philosophy of Marxism and Leninism" ;
+    ns1:previous "0" .
+
+<https://github.com/ngqynhanh/CurriculumPlanning/course/PE016IU> a ns1:Course ;
+    ns1:corequisite "PE015IU" ;
+    ns1:courseDescription "Introduces relational databases, SQL, normalization, ER models, and database design." ;
+    ns1:courseDifficulty 6.65e-01 ;
+    ns1:credits 2 ;
+    ns1:description "Introduces relational databases, SQL, normalization, ER models, and database design." ;
+    ns1:elective 0 ;
+    ns1:hasPrerequisite "0" ;
+    ns1:name "Political economics of Marxism and Leninism" ;
+    ns1:previous "0" .
+
+<https://github.com/ngqynhanh/CurriculumPlanning/course/PE017IU> a ns1:Course ;
+    ns1:corequisite "0" ;
+    ns1:courseDescription "Analyzes the scientific basis of socialism, historical development, and practical implementation." ;
+    ns1:courseDifficulty 7.16e-01 ;
+    ns1:credits 2 ;
+    ns1:description "Analyzes the scientific basis of socialism, historical development, and practical implementation." ;
+    ns1:elective 0 ;
+    ns1:hasPrerequisite "0" ;
+    ns1:name "Scientific socialism" ;
+    ns1:previous "PE016IU AND PE015IU" .
+
+<https://github.com/ngqynhanh/CurriculumPlanning/course/PE018IU> a ns1:Course ;
+    ns1:corequisite "0" ;
+    ns1:courseDescription "Examines the formation, development, and leadership role of the Communist Party in Vietnamese history." ;
+    ns1:courseDifficulty 6.99e-01 ;
+    ns1:credits 2 ;
+    ns1:description "Examines the formation, development, and leadership role of the Communist Party in Vietnamese history." ;
+    ns1:elective 0 ;
+    ns1:hasPrerequisite "0" ;
+    ns1:name "History of Vietnamese Communist Party" ;
+    ns1:previous "PE017IU" .
+
+<https://github.com/ngqynhanh/CurriculumPlanning/course/PE019IU> a ns1:Course ;
+    ns1:corequisite "0" ;
+    ns1:courseDescription "Explores the ideological foundation and political philosophy of Ho Chi Minh and its impact on Vietnam." ;
+    ns1:courseDifficulty 7.92e-01 ;
+    ns1:credits 2 ;
+    ns1:description "Explores the ideological foundation and political philosophy of Ho Chi Minh and its impact on Vietnam." ;
+    ns1:elective 0 ;
+    ns1:hasPrerequisite "0" ;
+    ns1:name "Ho Chi Minh's Thoughts" ;
+    ns1:previous "PE017IU" .
+
+<https://github.com/ngqynhanh/CurriculumPlanning/course/PE021IU> a ns1:Course ;
+    ns1:corequisite "0" ;
+    ns1:courseDescription "Provides foundational knowledge of legal systems, civil law, and rights relevant to everyday life." ;
+    ns1:courseDifficulty 3.01e-01 ;
+    ns1:credits 3 ;
+    ns1:description "Provides foundational knowledge of legal systems, civil law, and rights relevant to everyday life." ;
+    ns1:elective 0 ;
+    ns1:hasPrerequisite "0" ;
+    ns1:name "General Law" ;
+    ns1:previous "0" .
+
+<https://github.com/ngqynhanh/CurriculumPlanning/course/PH013IU> a ns1:Course ;
+    ns1:corequisite "0" ;
+    ns1:courseDescription "An introduction to structured and procedural programming using the C and C++ languages, covering syntax, control structures, functions, and file handling." ;
+    ns1:courseDifficulty 3.56e-01 ;
+    ns1:credits 2 ;
+    ns1:description "An introduction to structured and procedural programming using the C and C++ languages, covering syntax, control structures, functions, and file handling." ;
+    ns1:elective 0 ;
+    ns1:hasPrerequisite "0" ;
+    ns1:name "Physics 1" ;
+    ns1:previous "0" .
+
+<https://github.com/ngqynhanh/CurriculumPlanning/course/PH015IU> a ns1:Course ;
+    ns1:corequisite "0" ;
+    ns1:courseDescription "This intermediate-level course focuses on improving spoken English for academic discussions, presentations, and interactive communication." ;
+    ns1:courseDifficulty 5.83e-01 ;
+    ns1:credits 3 ;
+    ns1:description "This intermediate-level course focuses on improving spoken English for academic discussions, presentations, and interactive communication." ;
+    ns1:elective 0 ;
+    ns1:hasPrerequisite "PH013IU" ;
+    ns1:name "Physics 3" ;
+    ns1:previous "0" .
+
+<https://github.com/ngqynhanh/CurriculumPlanning/course/PH016IU> a ns1:Course ;
+    ns1:corequisite "PH015IU" ;
+    ns1:courseDescription "A foundational course introducing computer systems, binary logic, software, hardware, and basic programming concepts." ;
+    ns1:courseDifficulty 2.31e-01 ;
+    ns1:credits 1 ;
+    ns1:description "A foundational course introducing computer systems, binary logic, software, hardware, and basic programming concepts." ;
+    ns1:elective 0 ;
+    ns1:hasPrerequisite "0" ;
+    ns1:name "Physics 3 Laboratory" ;
+    ns1:previous "0" .
+
+<https://github.com/ngqynhanh/CurriculumPlanning/course/PT001IU> a ns1:Course ;
+    ns1:corequisite "0" ;
+    ns1:courseDescription "Develops logical reasoning, argument analysis, and decision-making skills across a range of contexts." ;
+    ns1:courseDifficulty 7.26e-01 ;
+    ns1:credits 3 ;
+    ns1:description "Develops logical reasoning, argument analysis, and decision-making skills across a range of contexts." ;
+    ns1:elective 0 ;
+    ns1:hasPrerequisite "0" ;
+    ns1:name "Physical Training 1" ;
+    ns1:previous "0" .
+
+<https://github.com/ngqynhanh/CurriculumPlanning/course/PT002IU> a ns1:Course ;
+    ns1:corequisite "0" ;
+    ns1:courseDescription "A continuation of PT001IU emphasizing team sports, coordination, and cardiovascular fitness." ;
+    ns1:courseDifficulty 3.88e-01 ;
+    ns1:credits 3 ;
+    ns1:description "A continuation of PT001IU emphasizing team sports, coordination, and cardiovascular fitness." ;
+    ns1:elective 0 ;
+    ns1:hasPrerequisite "0" ;
+    ns1:name "Physical Training 2" ;
+    ns1:previous "0" .
+
