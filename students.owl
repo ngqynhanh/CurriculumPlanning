@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="students.owl"
+         xmlns="students.owl#">
+
+<owl:Ontology rdf:about="students.owl">
+  <owl:imports rdf:resource="courses.owl/courses.owl"/>
+</owl:Ontology>
+
+<owl:ObjectProperty rdf:about="#courseStudied">
+  <rdfs:domain rdf:resource="#Student"/>
+  <rdfs:range rdf:resource="courses.owl#Course"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#coursePassed">
+  <rdfs:domain rdf:resource="#Student"/>
+  <rdfs:range rdf:resource="courses.owl#Course"/>
+</owl:ObjectProperty>
+
+<owl:DatatypeProperty rdf:about="#totalCredits">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#Student"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#civilActivitiesCompleted">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#Student"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#militaryTrainingCompleted">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#Student"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#englishScore">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#Student"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#gpa">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#Student"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#major">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#Student"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</owl:DatatypeProperty>
+
+<owl:Class rdf:about="#Student">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:NamedIndividual rdf:about="#001">
+  <rdf:type rdf:resource="#Student"/>
+  <coursePassed rdf:resource="courses.owl/courses.owl#EN007IU"/>
+  <coursePassed rdf:resource="courses.owl/courses.owl#IT116IU"/>
+  <coursePassed rdf:resource="courses.owl/courses.owl#PH013IU"/>
+  <coursePassed rdf:resource="courses.owl/courses.owl#PH016IU"/>
+  <coursePassed rdf:resource="courses.owl/courses.owl#EN012IU"/>
+  <coursePassed rdf:resource="courses.owl/courses.owl#EN011IU"/>
+  <coursePassed rdf:resource="courses.owl/courses.owl#IT069IU"/>
+  <coursePassed rdf:resource="courses.owl/courses.owl#IT153IU"/>
+  <coursePassed rdf:resource="courses.owl/courses.owl#IT090IU"/>
+  <courseStudied rdf:resource="courses.owl/courses.owl#MA001IU"/>
+  <courseStudied rdf:resource="courses.owl/courses.owl#EN008IU"/>
+  <courseStudied rdf:resource="courses.owl/courses.owl#EN007IU"/>
+  <courseStudied rdf:resource="courses.owl/courses.owl#IT116IU"/>
+  <courseStudied rdf:resource="courses.owl/courses.owl#PH013IU"/>
+  <courseStudied rdf:resource="courses.owl/courses.owl#PH016IU"/>
+  <courseStudied rdf:resource="courses.owl/courses.owl#EN012IU"/>
+  <courseStudied rdf:resource="courses.owl/courses.owl#EN011IU"/>
+  <courseStudied rdf:resource="courses.owl/courses.owl#IT069IU"/>
+  <courseStudied rdf:resource="courses.owl/courses.owl#IT153IU"/>
+  <courseStudied rdf:resource="courses.owl/courses.owl#IT090IU"/>
+  <totalCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">136</totalCredits>
+  <gpa rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">78.5</gpa>
+  <englishScore rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75</englishScore>
+  <militaryTrainingCompleted rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</militaryTrainingCompleted>
+  <civilActivitiesCompleted rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</civilActivitiesCompleted>
+  <major rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Computer Science</major>
+</owl:NamedIndividual>
+
+
+</rdf:RDF>

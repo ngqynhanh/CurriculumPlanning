@@ -1,0 +1,44 @@
+1. Credit Requirements
+    Thesis Credits:
+        Students must have completed at least 136 credits before registering for the thesis.
+
+    Min/Max Credits per Semester:
+        Students must register for 14–24 credits per semester.
+
+2. Scheduling Rules
+    No Timetable Conflict:
+        A course cannot be scheduled in the same time slot as another course the student is already registered for.
+
+3. Course Relationships
+    Prerequisite:
+        If Course A is a prerequisite of Course B, a student must pass Course A before registering for Course B.
+        (Pass = Grade ≥ 50/100)
+
+    Co-requisite:
+        If Course A and Course B are co-requisites, they must be taken in the same semester.
+
+    Previous Course:
+        If Course A is a previous course of Course B, a student must complete Course A before registering for Course B. (Passing not required)
+
+    Elective:
+        An elective course can be chosen from a predefined set of optional courses in the curriculum.
+
+    Free Elective:
+        A free elective can be chosen from any course offered in any IU program.
+
+4. General Graduation Requirements
+    Credits: Must have completed all required credits, including the thesis.
+
+    GPA: Total GPA ≥ 50/100 with no course having a grade < 50/100.
+
+    Study Duration: Total study time ≤ 6 years.
+
+    English Proficiency: TOEFL iBT ≥ 61 or IELTS ≥ 5.5.
+
+    Military Training: Must complete military training requirement.
+
+    Civil Activities: Must attend all three:
+        Entrance political session
+        Midterm political session
+        Exit political session
+

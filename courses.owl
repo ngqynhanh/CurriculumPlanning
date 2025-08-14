@@ -1,0 +1,626 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="courses.owl"
+         xmlns="courses.owl#">
+
+<owl:Ontology rdf:about="courses.owl"/>
+
+<owl:ObjectProperty rdf:about="#hasPrerequisites">
+  <rdfs:domain rdf:resource="#Course"/>
+  <rdfs:range rdf:resource="#Course"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#hasCorequisite">
+  <rdfs:domain rdf:resource="#Course"/>
+  <rdfs:range rdf:resource="#Course"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#hasPrevious">
+  <rdfs:domain rdf:resource="#Course"/>
+  <rdfs:range rdf:resource="#Course"/>
+</owl:ObjectProperty>
+
+<owl:DatatypeProperty rdf:about="#hasName">
+  <rdfs:domain rdf:resource="#Course"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#hasCredits">
+  <rdfs:domain rdf:resource="#Course"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#isElective">
+  <rdfs:domain rdf:resource="#Course"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#hasDifficulty">
+  <rdfs:domain rdf:resource="#Course"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#hasDescription">
+  <rdfs:domain rdf:resource="#Course"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</owl:DatatypeProperty>
+
+<owl:Class rdf:about="#Course">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:NamedIndividual rdf:about="#MA001IU">
+  <rdf:type rdf:resource="#Course"/>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Calculus 1</hasName>
+  <hasCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasCredits>
+  <isElective rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isElective>
+  <hasDifficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.713</hasDifficulty>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This course introduces the principles of deep learning, including neural networks, convolutional neural networks (CNNs), recurrent networks, and autoencoders, with practical applications in image and language processing.</hasDescription>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#IT116IU">
+  <rdf:type rdf:resource="#Course"/>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C/C++ Programming</hasName>
+  <hasCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasCredits>
+  <isElective rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isElective>
+  <hasDifficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.724</hasDifficulty>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This course covers fundamental calculus concepts such as limits, derivatives, and integrals, with applications in engineering and science.</hasDescription>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#PH013IU">
+  <rdf:type rdf:resource="#Course"/>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Physics 1</hasName>
+  <hasCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasCredits>
+  <isElective rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isElective>
+  <hasDifficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.356</hasDifficulty>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An introduction to structured and procedural programming using the C and C++ languages, covering syntax, control structures, functions, and file handling.</hasDescription>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#EN008IU">
+  <rdf:type rdf:resource="#Course"/>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Listening AE1</hasName>
+  <hasCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasCredits>
+  <isElective rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isElective>
+  <hasDifficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.605</hasDifficulty>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fundamentals of mechanics including motion, forces, energy, momentum, and rotational dynamics, tailored for science and engineering students.</hasDescription>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#EN007IU">
+  <rdf:type rdf:resource="#Course"/>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Writing AE1</hasName>
+  <hasCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasCredits>
+  <isElective rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isElective>
+  <hasDifficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.65</hasDifficulty>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A beginner-level course in academic English listening skills, focusing on understanding lectures, note-taking, and recognizing main ideas and details.</hasDescription>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#IT064IU">
+  <rdf:type rdf:resource="#Course"/>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Introduction to Computing</hasName>
+  <hasCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasCredits>
+  <isElective rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isElective>
+  <hasDifficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.629</hasDifficulty>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This course develops basic academic writing skills, including paragraph structure, coherence, and grammar for clear written communication.</hasDescription>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#PH016IU">
+  <rdf:type rdf:resource="#Course"/>
+  <hasCorequisite rdf:resource="#PH015IU"/>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Physics 3 Laboratory</hasName>
+  <hasCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasCredits>
+  <isElective rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isElective>
+  <hasDifficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.231</hasDifficulty>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A foundational course introducing computer systems, binary logic, software, hardware, and basic programming concepts.</hasDescription>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#EN012IU">
+  <rdf:type rdf:resource="#Course"/>
+  <hasPrerequisites rdf:resource="#EN008IU"/>
+  <hasPrerequisites rdf:resource="#EN007IU"/>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Speaking AE2</hasName>
+  <hasCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasCredits>
+  <isElective rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isElective>
+  <hasDifficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.677</hasDifficulty>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A lab course accompanying Physics 3, allowing students to experimentally explore electromagnetism and optics through hands-on activities.</hasDescription>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#PH015IU">
+  <rdf:type rdf:resource="#Course"/>
+  <hasPrerequisites rdf:resource="#PH013IU"/>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Physics 3</hasName>
+  <hasCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasCredits>
+  <isElective rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isElective>
+  <hasDifficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.583</hasDifficulty>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This intermediate-level course focuses on improving spoken English for academic discussions, presentations, and interactive communication.</hasDescription>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#IT069IU">
+  <rdf:type rdf:resource="#Course"/>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Object-Oriented Programming</hasName>
+  <hasCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasCredits>
+  <isElective rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isElective>
+  <hasDifficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.325</hasDifficulty>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Advanced physics concepts involving electricity, magnetism, and optics, with theoretical and real-world engineering applications.</hasDescription>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#EN011IU">
+  <rdf:type rdf:resource="#Course"/>
+  <hasPrerequisites rdf:resource="#EN008IU"/>
+  <hasPrerequisites rdf:resource="#EN007IU"/>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Writing AE2</hasName>
+  <hasCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasCredits>
+  <isElective rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isElective>
+  <hasDifficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.465</hasDifficulty>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Explores object-oriented concepts such as classes, inheritance, polymorphism, and encapsulation using Java or C++.</hasDescription>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#IT153IU">
+  <rdf:type rdf:resource="#Course"/>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Discrete Mathematics</hasName>
+  <hasCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasCredits>
+  <isElective rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isElective>
+  <hasDifficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.259</hasDifficulty>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An intermediate academic writing course emphasizing essay structure, argumentation, citation, and critical thinking.</hasDescription>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#IT091IU">
+  <rdf:type rdf:resource="#Course"/>
+  <hasPrevious rdf:resource="#IT116IU"/>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Computer Networks</hasName>
+  <hasCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasCredits>
+  <isElective rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isElective>
+  <hasDifficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.232</hasDifficulty>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Provides foundational mathematical structures for computer science including logic, sets, functions, combinatorics, and graph theory.</hasDescription>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#MA003IU">
+  <rdf:type rdf:resource="#Course"/>
+  <hasPrevious rdf:resource="#MA001IU"/>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Calculus 2</hasName>
+  <hasCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasCredits>
+  <isElective rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isElective>
+  <hasDifficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.739</hasDifficulty>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This course covers IP protocols, routing algorithms, TCP/IP, network architecture, LAN/WAN, and security concepts.</hasDescription>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#IT154IU">
+  <rdf:type rdf:resource="#Course"/>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Linear Algebra</hasName>
+  <hasCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasCredits>
+  <isElective rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isElective>
+  <hasDifficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.685</hasDifficulty>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Continues Calculus 1 with techniques of integration, sequences and series, and multivariable functions.</hasDescription>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#IT013IU">
+  <rdf:type rdf:resource="#Course"/>
+  <hasPrevious rdf:resource="#IT069IU"/>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Algorithms &amp; Data Structures</hasName>
+  <hasCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasCredits>
+  <isElective rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isElective>
+  <hasDifficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.269</hasDifficulty>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Covers vectors, matrices, determinants, linear transformations, eigenvalues, and their applications in computing.</hasDescription>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#IT079IU">
+  <rdf:type rdf:resource="#Course"/>
+  <hasPrevious rdf:resource="#IT116IU"/>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Principles of Database Management</hasName>
+  <hasCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasCredits>
+  <isElective rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isElective>
+  <hasDifficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.356</hasDifficulty>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Study of sorting, searching, trees, graphs, and algorithm analysis to solve computational problems efficiently.</hasDescription>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#PE016IU">
+  <rdf:type rdf:resource="#Course"/>
+  <hasCorequisite rdf:resource="#PE015IU"/>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Political economics of Marxism and Leninism</hasName>
+  <hasCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasCredits>
+  <isElective rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isElective>
+  <hasDifficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.665</hasDifficulty>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Introduces relational databases, SQL, normalization, ER models, and database design.</hasDescription>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#PE015IU">
+  <rdf:type rdf:resource="#Course"/>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Philosophy of Marxism and Leninism</hasName>
+  <hasCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasCredits>
+  <isElective rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isElective>
+  <hasDifficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.737</hasDifficulty>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A theoretical course on Marxist-Leninist economics, focusing on class struggle, surplus value, and socialist economic planning.</hasDescription>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#IT133IU">
+  <rdf:type rdf:resource="#Course"/>
+  <hasPrerequisites rdf:resource="#IT090IU"/>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mobile Application Development</hasName>
+  <hasCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasCredits>
+  <isElective rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</isElective>
+  <hasDifficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.26</hasDifficulty>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Introduces dialectical materialism, historical materialism, and their application in society and politics.</hasDescription>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#IT044IU">
+  <rdf:type rdf:resource="#Course"/>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human-Computer Interaction</hasName>
+  <hasCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasCredits>
+  <isElective rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</isElective>
+  <hasDifficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.359</hasDifficulty>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Covers the design and development of mobile applications on platforms like Android and iOS using appropriate SDKs and tools.</hasDescription>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#IT134IU">
+  <rdf:type rdf:resource="#Course"/>
+  <hasPrerequisites rdf:resource="#IT091IU"/>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Internet of Things</hasName>
+  <hasCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasCredits>
+  <isElective rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</isElective>
+  <hasDifficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.664</hasDifficulty>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Focuses on designing user-friendly interfaces, usability testing, and interaction models in software applications.</hasDescription>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#PE008IU">
+  <rdf:type rdf:resource="#Course"/>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Critical Thinking</hasName>
+  <hasCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasCredits>
+  <isElective rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</isElective>
+  <hasDifficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.22</hasDifficulty>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An introduction to IoT architecture, sensors, networking, data collection, and smart device integration.</hasDescription>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#PT001IU">
+  <rdf:type rdf:resource="#Course"/>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Physical Training 1</hasName>
+  <hasCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasCredits>
+  <isElective rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isElective>
+  <hasDifficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.726</hasDifficulty>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Develops logical reasoning, argument analysis, and decision-making skills across a range of contexts.</hasDescription>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#IT093IU">
+  <rdf:type rdf:resource="#Course"/>
+  <hasPrerequisites rdf:resource="#IT079IU"/>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Web Application Development</hasName>
+  <hasCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasCredits>
+  <isElective rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isElective>
+  <hasDifficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.54</hasDifficulty>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A physical education course promoting fitness, endurance, and basic physical skills through structured exercise routines.</hasDescription>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#IT166IU">
+  <rdf:type rdf:resource="#Course"/>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Software Quality Verification and Validation</hasName>
+  <hasCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasCredits>
+  <isElective rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</isElective>
+  <hasDifficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.751</hasDifficulty>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Covers full-stack web development including front-end frameworks, back-end APIs, and deployment practices.</hasDescription>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#IT167IU">
+  <rdf:type rdf:resource="#Course"/>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Game Application Development</hasName>
+  <hasCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasCredits>
+  <isElective rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</isElective>
+  <hasDifficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.229</hasDifficulty>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Focuses on software testing techniques, validation strategies, defect management, and quality assurance.</hasDescription>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#IT165IU">
+  <rdf:type rdf:resource="#Course"/>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Security Technology and Implementation</hasName>
+  <hasCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasCredits>
+  <isElective rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</isElective>
+  <hasDifficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.682</hasDifficulty>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Teaches game design principles, graphics, physics engines, and development using modern game frameworks.</hasDescription>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#IT150IU">
+  <rdf:type rdf:resource="#Course"/>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blockchain</hasName>
+  <hasCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasCredits>
+  <isElective rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</isElective>
+  <hasDifficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.735</hasDifficulty>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Covers cryptography, network security, firewalls, and secure coding practices.</hasDescription>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#IT056IU">
+  <rdf:type rdf:resource="#Course"/>
+  <hasPrevious rdf:resource="#IT069IU"/>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IT Project Management</hasName>
+  <hasCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasCredits>
+  <isElective rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</isElective>
+  <hasDifficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.653</hasDifficulty>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Introduces blockchain technology, smart contracts, distributed ledgers, and their applications in modern systems.</hasDescription>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#IT157IU">
+  <rdf:type rdf:resource="#Course"/>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deep Learning</hasName>
+  <hasCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasCredits>
+  <isElective rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</isElective>
+  <hasDifficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.521</hasDifficulty>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Explores project lifecycle, planning, risk management, and agile methodologies in software development projects.</hasDescription>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#IT138IU">
+  <rdf:type rdf:resource="#Course"/>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data Science and Data Visualization</hasName>
+  <hasCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasCredits>
+  <isElective rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</isElective>
+  <hasDifficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.544</hasDifficulty>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Combines data preprocessing, statistical analysis, machine learning, and visualization tools like Tableau or Python.</hasDescription>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#IT024IU">
+  <rdf:type rdf:resource="#Course"/>
+  <hasPrevious rdf:resource="#IT069IU"/>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Computer Graphics</hasName>
+  <hasCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasCredits>
+  <isElective rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</isElective>
+  <hasDifficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.707</hasDifficulty>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Covers algorithms and techniques for rendering, modeling, and animation using OpenGL or similar libraries.</hasDescription>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#IT090IU">
+  <rdf:type rdf:resource="#Course"/>
+  <hasPrerequisites rdf:resource="#IT069IU"/>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Object-Oriented Analysis and Design</hasName>
+  <hasCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasCredits>
+  <isElective rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isElective>
+  <hasDifficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.537</hasDifficulty>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Focuses on object-oriented software modeling with UML, design patterns, and system analysis.</hasDescription>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#IT164IU">
+  <rdf:type rdf:resource="#Course"/>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cloud computing</hasName>
+  <hasCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasCredits>
+  <isElective rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</isElective>
+  <hasDifficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.515</hasDifficulty>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Introduces cloud architectures, virtualization, cloud services (IaaS, PaaS, SaaS), and deployment models.</hasDescription>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#IT094IU">
+  <rdf:type rdf:resource="#Course"/>
+  <hasPrevious rdf:resource="#IT079IU"/>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Information System Management</hasName>
+  <hasCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasCredits>
+  <isElective rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</isElective>
+  <hasDifficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.469</hasDifficulty>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Teaches strategic use of information systems for business decision-making and enterprise resource planning.</hasDescription>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#IT089IU">
+  <rdf:type rdf:resource="#Course"/>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Computer Architecture</hasName>
+  <hasCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasCredits>
+  <isElective rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isElective>
+  <hasDifficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.277</hasDifficulty>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Explores processor design, memory hierarchies, instruction sets, and performance optimization.</hasDescription>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#IT156IU">
+  <rdf:type rdf:resource="#Course"/>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Development and Operations</hasName>
+  <hasCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasCredits>
+  <isElective rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</isElective>
+  <hasDifficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.583</hasDifficulty>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Focuses on DevOps culture, CI/CD pipelines, version control, and infrastructure as code.</hasDescription>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#IT160IU">
+  <rdf:type rdf:resource="#Course"/>
+  <hasPrevious rdf:resource="#IT069IU"/>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data Mining</hasName>
+  <hasCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasCredits>
+  <isElective rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</isElective>
+  <hasDifficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.613</hasDifficulty>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Covers data preprocessing, pattern discovery, clustering, classification, and association rule mining techniques.</hasDescription>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#PE017IU">
+  <rdf:type rdf:resource="#Course"/>
+  <hasPrevious rdf:resource="#PE016IU"/>
+  <hasPrevious rdf:resource="#PE015IU"/>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scientific socialism</hasName>
+  <hasCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasCredits>
+  <isElective rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isElective>
+  <hasDifficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.716</hasDifficulty>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Analyzes the scientific basis of socialism, historical development, and practical implementation.</hasDescription>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#IT114IU">
+  <rdf:type rdf:resource="#Course"/>
+  <hasPrevious rdf:resource="#IT069IU"/>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Software Architecture</hasName>
+  <hasCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasCredits>
+  <isElective rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</isElective>
+  <hasDifficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.709</hasDifficulty>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Focuses on system design, architectural patterns, component-based development, and scalability.</hasDescription>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#PT002IU">
+  <rdf:type rdf:resource="#Course"/>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Physical Training 2</hasName>
+  <hasCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasCredits>
+  <isElective rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isElective>
+  <hasDifficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.388</hasDifficulty>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A continuation of PT001IU emphasizing team sports, coordination, and cardiovascular fitness.</hasDescription>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#IT096IU">
+  <rdf:type rdf:resource="#Course"/>
+  <hasPrerequisites rdf:resource="#IT091IU"/>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Net-Centric Programming</hasName>
+  <hasCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasCredits>
+  <isElective rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</isElective>
+  <hasDifficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.556</hasDifficulty>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Teaches socket programming, network protocols, and distributed application development.</hasDescription>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#IT092IU">
+  <rdf:type rdf:resource="#Course"/>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Principles of Programming Languages</hasName>
+  <hasCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasCredits>
+  <isElective rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isElective>
+  <hasDifficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.712</hasDifficulty>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Explores programming paradigms, syntax and semantics, and language implementation techniques.</hasDescription>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#IT130IU">
+  <rdf:type rdf:resource="#Course"/>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Digital Image Processing</hasName>
+  <hasCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasCredits>
+  <isElective rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</isElective>
+  <hasDifficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.211</hasDifficulty>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Covers image transformation, filtering, enhancement, segmentation, and computer vision basics.</hasDescription>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#MA026IU">
+  <rdf:type rdf:resource="#Course"/>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Probability, Statistic &amp; Random Process</hasName>
+  <hasCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasCredits>
+  <isElective rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isElective>
+  <hasDifficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.679</hasDifficulty>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Introduces probability theory, statistical inference, and random processes with applications in engineering.</hasDescription>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#BA005IU">
+  <rdf:type rdf:resource="#Course"/>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Financial Accounting</hasName>
+  <hasCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasCredits>
+  <isElective rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</isElective>
+  <hasDifficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.451</hasDifficulty>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Covers the principles of financial accounting, financial statements, and analysis for decision-making.</hasDescription>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#BA003IU">
+  <rdf:type rdf:resource="#Course"/>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Principles of Marketing</hasName>
+  <hasCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasCredits>
+  <isElective rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</isElective>
+  <hasDifficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.679</hasDifficulty>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Introduces marketing fundamentals, consumer behavior, product strategy, and market research.</hasDescription>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#PE018IU">
+  <rdf:type rdf:resource="#Course"/>
+  <hasPrevious rdf:resource="#PE017IU"/>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">History of Vietnamese Communist Party</hasName>
+  <hasCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasCredits>
+  <isElective rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isElective>
+  <hasDifficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.699</hasDifficulty>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Examines the formation, development, and leadership role of the Communist Party in Vietnamese history.</hasDescription>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#IT159IU">
+  <rdf:type rdf:resource="#Course"/>
+  <hasPrevious rdf:resource="#IT069IU"/>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Artificial Intelligence</hasName>
+  <hasCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasCredits>
+  <isElective rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isElective>
+  <hasDifficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.269</hasDifficulty>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Covers search algorithms, knowledge representation, reasoning, and machine learning techniques in AI systems.</hasDescription>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#PE021IU">
+  <rdf:type rdf:resource="#Course"/>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">General Law</hasName>
+  <hasCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasCredits>
+  <isElective rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isElective>
+  <hasDifficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.301</hasDifficulty>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Provides foundational knowledge of legal systems, civil law, and rights relevant to everyday life.</hasDescription>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#IT120IU">
+  <rdf:type rdf:resource="#Course"/>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Entrepreneurship</hasName>
+  <hasCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasCredits>
+  <isElective rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isElective>
+  <hasDifficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.493</hasDifficulty>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Focuses on business idea generation, startups, venture capital, and entrepreneurial mindset development.</hasDescription>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#EE068IU">
+  <rdf:type rdf:resource="#Course"/>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Principles of Communication Systems</hasName>
+  <hasCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasCredits>
+  <isElective rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</isElective>
+  <hasDifficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.36</hasDifficulty>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Introduces analog and digital communication, modulation techniques, and system performance analysis.</hasDescription>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#EE049IU">
+  <rdf:type rdf:resource="#Course"/>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Introduction to Electrical Engineering</hasName>
+  <hasCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasCredits>
+  <isElective rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</isElective>
+  <hasDifficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.665</hasDifficulty>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Covers circuit theory, electrical components, and measurement tools for beginners in EE.</hasDescription>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#IT076IU">
+  <rdf:type rdf:resource="#Course"/>
+  <hasPrerequisites rdf:resource="#IT069IU"/>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Software Engineering</hasName>
+  <hasCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasCredits>
+  <isElective rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isElective>
+  <hasDifficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.698</hasDifficulty>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Focuses on software development methodologies, lifecycle models, requirements engineering, and team collaboration.</hasDescription>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#IT082IU">
+  <rdf:type rdf:resource="#Course"/>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Internship</hasName>
+  <hasCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasCredits>
+  <isElective rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isElective>
+  <hasDifficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.397</hasDifficulty>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A supervised industrial placement to apply academic knowledge in a real-world work environment.</hasDescription>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#IT083IU">
+  <rdf:type rdf:resource="#Course"/>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Special Study of the Field</hasName>
+  <hasCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasCredits>
+  <isElective rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isElective>
+  <hasDifficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.645</hasDifficulty>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An individual research or development project in a selected area of the student's major.</hasDescription>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#IT017IU">
+  <rdf:type rdf:resource="#Course"/>
+  <hasPrerequisites rdf:resource="#IT089IU"/>
+  <hasPrerequisites rdf:resource="#IT013IU"/>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Operating Systems</hasName>
+  <hasCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasCredits>
+  <isElective rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isElective>
+  <hasDifficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.751</hasDifficulty>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Covers processes, memory management, file systems, and concurrency in modern operating systems.</hasDescription>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#PE019IU">
+  <rdf:type rdf:resource="#Course"/>
+  <hasPrevious rdf:resource="#PE017IU"/>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ho Chi Minh's Thoughts</hasName>
+  <hasCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasCredits>
+  <isElective rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isElective>
+  <hasDifficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.792</hasDifficulty>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Explores the ideological foundation and political philosophy of Ho Chi Minh and its impact on Vietnam.</hasDescription>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#IT058IU">
+  <rdf:type rdf:resource="#Course"/>
+  <hasPrerequisites rdf:resource="#IT083IU"/>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thesis</hasName>
+  <hasCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</hasCredits>
+  <isElective rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</isElective>
+  <hasDifficulty rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.204</hasDifficulty>
+  <hasDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The final capstone project involving research or development in a specific computer science domain under supervision.</hasDescription>
+</owl:NamedIndividual>
+
+
+</rdf:RDF>
